@@ -1,0 +1,715 @@
+{
+  "type": "object",
+  "properties": {
+    "executive_summary": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "basis": {
+          "type": "string",
+          "enum": [
+            "serp_observation",
+            "editorial_inference",
+            "user_context"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[PQKIUB][1-9][0-9]*$"
+          },
+          "maxItems": 20,
+          "minItems": 0
+        }
+      },
+      "required": [
+        "text",
+        "basis",
+        "evidence_ids"
+      ],
+      "additionalProperties": false
+    },
+    "search_intent": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "type": "string",
+          "enum": [
+            "informational",
+            "commercial",
+            "transactional",
+            "navigational",
+            "mixed",
+            "uncertain"
+          ]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "rationale": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "basis": {
+              "type": "string",
+              "enum": [
+                "serp_observation",
+                "editorial_inference",
+                "user_context"
+              ]
+            },
+            "evidence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[PQKIUB][1-9][0-9]*$"
+              },
+              "maxItems": 20,
+              "minItems": 0
+            }
+          },
+          "required": [
+            "text",
+            "basis",
+            "evidence_ids"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "primary",
+        "confidence",
+        "rationale"
+      ],
+      "additionalProperties": false
+    },
+    "target_reader": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "basis": {
+          "type": "string",
+          "enum": [
+            "serp_observation",
+            "editorial_inference",
+            "user_context"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[PQKIUB][1-9][0-9]*$"
+          },
+          "maxItems": 20,
+          "minItems": 0
+        }
+      },
+      "required": [
+        "text",
+        "basis",
+        "evidence_ids"
+      ],
+      "additionalProperties": false
+    },
+    "competitor_observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^P[1-9][0-9]*$",
+            "description": "The source page being described. Each observation must cite this ID and be supported by this page."
+          },
+          "observations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000
+                },
+                "basis": {
+                  "type": "string",
+                  "enum": [
+                    "serp_observation",
+                    "editorial_inference",
+                    "user_context"
+                  ]
+                },
+                "evidence_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[PQKIUB][1-9][0-9]*$"
+                  },
+                  "maxItems": 20,
+                  "minItems": 0
+                }
+              },
+              "required": [
+                "text",
+                "basis",
+                "evidence_ids"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 5,
+            "minItems": 1
+          }
+        },
+        "required": [
+          "source_id",
+          "observations"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 10,
+      "minItems": 0
+    },
+    "must_cover_topics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "serp_observation",
+              "editorial_inference",
+              "user_context"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[PQKIUB][1-9][0-9]*$"
+            },
+            "maxItems": 20,
+            "minItems": 0
+          }
+        },
+        "required": [
+          "text",
+          "basis",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 12,
+      "minItems": 1
+    },
+    "differentiation_angles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "serp_observation",
+              "editorial_inference",
+              "user_context"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[PQKIUB][1-9][0-9]*$"
+            },
+            "maxItems": 20,
+            "minItems": 0
+          }
+        },
+        "required": [
+          "text",
+          "basis",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 8,
+      "minItems": 1
+    },
+    "semantic_keywords": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "term": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "serp_observation",
+              "editorial_inference",
+              "user_context"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[PQKIUB][1-9][0-9]*$"
+            },
+            "maxItems": 20,
+            "minItems": 0
+          }
+        },
+        "required": [
+          "term",
+          "basis",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 15,
+      "minItems": 0
+    },
+    "article_plan": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "suggested_word_count": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20000
+            },
+            "max": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20000
+            },
+            "rationale": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000
+                },
+                "basis": {
+                  "type": "string",
+                  "enum": [
+                    "serp_observation",
+                    "editorial_inference",
+                    "user_context"
+                  ]
+                },
+                "evidence_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[PQKIUB][1-9][0-9]*$"
+                  },
+                  "maxItems": 20,
+                  "minItems": 0
+                }
+              },
+              "required": [
+                "text",
+                "basis",
+                "evidence_ids"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "min",
+            "max",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "outline": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "h2": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "h3": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000
+                },
+                "maxItems": 3,
+                "minItems": 0
+              },
+              "purpose": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "basis": {
+                    "type": "string",
+                    "enum": [
+                      "serp_observation",
+                      "editorial_inference",
+                      "user_context"
+                    ]
+                  },
+                  "evidence_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[PQKIUB][1-9][0-9]*$"
+                    },
+                    "maxItems": 20,
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "text",
+                  "basis",
+                  "evidence_ids"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "h2",
+              "h3",
+              "purpose"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 8,
+          "minItems": 4
+        }
+      },
+      "required": [
+        "format",
+        "suggested_word_count",
+        "outline"
+      ],
+      "additionalProperties": false
+    },
+    "eeat_recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "serp_observation",
+              "editorial_inference",
+              "user_context"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[PQKIUB][1-9][0-9]*$"
+            },
+            "maxItems": 20,
+            "minItems": 0
+          }
+        },
+        "required": [
+          "text",
+          "basis",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 8,
+      "minItems": 1
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "slug"
+      ],
+      "additionalProperties": false
+    },
+    "faq": {
+      "type": "object",
+      "properties": {
+        "observed_paa": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question_id": {
+                "type": "string",
+                "pattern": "^[PQKIUB][1-9][0-9]*$"
+              },
+              "answer_direction": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "basis": {
+                    "type": "string",
+                    "enum": [
+                      "serp_observation",
+                      "editorial_inference",
+                      "user_context"
+                    ]
+                  },
+                  "evidence_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[PQKIUB][1-9][0-9]*$"
+                    },
+                    "maxItems": 20,
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "text",
+                  "basis",
+                  "evidence_ids"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "question_id",
+              "answer_direction"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 10,
+          "minItems": 0
+        },
+        "suggested_questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "rationale": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "basis": {
+                    "type": "string",
+                    "enum": [
+                      "serp_observation",
+                      "editorial_inference",
+                      "user_context"
+                    ]
+                  },
+                  "evidence_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[PQKIUB][1-9][0-9]*$"
+                    },
+                    "maxItems": 20,
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "text",
+                  "basis",
+                  "evidence_ids"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "question",
+              "rationale"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 5,
+          "minItems": 0
+        }
+      },
+      "required": [
+        "observed_paa",
+        "suggested_questions"
+      ],
+      "additionalProperties": false
+    },
+    "cta": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "basis": {
+          "type": "string",
+          "enum": [
+            "serp_observation",
+            "editorial_inference",
+            "user_context"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[PQKIUB][1-9][0-9]*$"
+          },
+          "maxItems": 20,
+          "minItems": 0
+        }
+      },
+      "required": [
+        "text",
+        "basis",
+        "evidence_ids"
+      ],
+      "additionalProperties": false
+    },
+    "internal_link_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[PQKIUB][1-9][0-9]*$"
+      },
+      "maxItems": 5,
+      "minItems": 0
+    },
+    "editor_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "serp_observation",
+              "editorial_inference",
+              "user_context"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[PQKIUB][1-9][0-9]*$"
+            },
+            "maxItems": 20,
+            "minItems": 0
+          }
+        },
+        "required": [
+          "text",
+          "basis",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 10,
+      "minItems": 1
+    }
+  },
+  "required": [
+    "executive_summary",
+    "search_intent",
+    "target_reader",
+    "competitor_observations",
+    "must_cover_topics",
+    "differentiation_angles",
+    "semantic_keywords",
+    "article_plan",
+    "eeat_recommendations",
+    "meta",
+    "faq",
+    "cta",
+    "internal_link_ids",
+    "editor_checks"
+  ],
+  "additionalProperties": false
+}

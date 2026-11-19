@@ -1,0 +1,490 @@
+{
+  "schema_version": "1.0",
+  "description": "Bundled SERP evidence for the offline tests. R1-R5 reuse the recorded Google web response stored in google-web-gb.json (observed 2026-11-17T02:31:16Z). R2 is a deliberately invalid variant used to check the invalid-response contract. R6 is a derived thordata.com site-search variant used to exercise the optional internal-link branch.",
+  "runs": [
+    {
+      "case": {
+        "id": "R1",
+        "query": "best serp api for seo",
+        "market": "us_en"
+      },
+      "result": {
+        "ok": true,
+        "status": 200,
+        "engine": "google_web",
+        "data": {
+          "cache_status": false,
+          "code": 200,
+          "credits": 1,
+          "google_ai_overview": false,
+          "organic": [
+            {
+              "date": "22 Feb 2026",
+              "description": "Compare the best SerpApi alternatives in 2026. Find the right web search API for AI apps, SEO tools, research, and lead collection use cases.",
+              "display_link": "https://serpapi.com › blog › serpapi-alternatives-best-we...",
+              "link": "https://serpapi.com/blog/serpapi-alternatives-best-web-search-apis/",
+              "position": 1,
+              "title": "SerpApi Alternatives: Best Web Search APIs in 2026"
+            },
+            {
+              "date": "2 Dec 2025",
+              "description": "The 10 SERP API providers we tested in 2026 are cloro, SerpApi, Serpent API, DataForSEO, ScrapeBadger, SearchApi, Serper, SE Ranking, ...",
+              "display_link": "https://cloro.dev › Blog",
+              "link": "https://cloro.dev/blog/best-serp-apis/",
+              "position": 2,
+              "title": "Best SERP APIs 2026: 10 Tested on Cost, AI and Tracking"
+            },
+            {
+              "date": "22 Jan 2026",
+              "description": "10 Best SERP APIs for Scraping Google in 2026 · Scrapingdog's SERP API · Data For SEO · Apify · SearchAPI · Bright Data · Hasdata · Serper · SerpAPI.",
+              "display_link": "https://www.scrapingdog.com › Blog",
+              "link": "https://www.scrapingdog.com/blog/best-serp-apis/",
+              "position": 3,
+              "title": "10 Best SERP APIs in 2026 to Scale Data Extraction from ..."
+            },
+            {
+              "description": "SerpApi is a real-time API to access Google search results. We handle proxies, solve captchas, and parse all rich structured data for you.",
+              "display_link": "https://serpapi.com",
+              "link": "https://serpapi.com/",
+              "position": 4,
+              "title": "SerpApi: Google Search API"
+            },
+            {
+              "date": "12 Oct 2026",
+              "description": "Semscraper vs DataForSEO: which SERP API for Google? DataForSEO is a very broad SEO data provider, and its SERP API is just one building block.",
+              "display_link": "https://www.semscraper.com › Semscraper › Guides",
+              "link": "https://www.semscraper.com/en/guides/best-serp-api",
+              "position": 5,
+              "title": "Best SERP API: Prices and Features Compared"
+            },
+            {
+              "display_link": "https://www.reddit.com › r › ... › whats_the_best_serp_scrapin...",
+              "link": "https://www.reddit.com/r/aiagents/comments/1mf6jwt/whats_the_best_serp_scraping_api_that_can_scale/",
+              "position": 6,
+              "title": "What's the best SERP scraping API that can scale easily - bright data or ..."
+            },
+            {
+              "display_link": "https://www.quora.com › What-is-the-best-Google-SER...",
+              "link": "https://www.quora.com/What-is-the-best-Google-SERP-scraper-Either-programming-solution-or-online-service-e-g-for-competitive-analysis",
+              "position": 7,
+              "title": "What is the best Google SERP scraper? Either programming solution or ..."
+            },
+            {
+              "description": "DataForSEO SERP API can power up any workflow: rank tracking, keyword research, competitive analysis, SERP feature monitoring, and AI Mode search insights.",
+              "display_link": "https://dataforseo.com › APIs",
+              "link": "https://dataforseo.com/apis/serp-api",
+              "position": 8,
+              "title": "SERP API You Can Trust: DataForSEO Always Works."
+            },
+            {
+              "date": "7 months ago",
+              "description": "DataForSEO bills per SERP page, Bright Data and Oxylabs talk in results, SerpApi is per successful search, ScraperAPI wraps things in credits, ...",
+              "display_link": "50+ comments  ·  7 months ago",
+              "link": "https://www.reddit.com/r/WebScrapingInsider/comments/1sesvvq/picking_one_google_serp_api_in_2026_feels_less/",
+              "position": 9,
+              "title": "Picking ONE Google SERP API in 2026 feels less like ..."
+            },
+            {
+              "date": "13 Apr 2026",
+              "description": "Looking for the best Google SERP scraper in 2026? We tested 7 tools: Chat4Data, SerpAPI, Oxylabs, and more, and ranked them by accuracy, ...",
+              "display_link": "https://chat4data.ai › blog › google-serp-scrapers",
+              "link": "https://chat4data.ai/blog/google-serp-scrapers",
+              "position": 10,
+              "title": "7 Best Google SERP Scrapers in 2026 (Tested & Ranked)"
+            }
+          ],
+          "spider_parameter": {
+            "engine": "google_web",
+            "gl": "gb",
+            "hl": "en",
+            "num": 10,
+            "q": "best serp api for seo",
+            "type": "search"
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "R2",
+        "query": "serp api comparison",
+        "market": "us_en"
+      },
+      "result": {
+        "ok": true,
+        "status": 200,
+        "engine": "bing",
+        "data": {}
+      }
+    },
+    {
+      "case": {
+        "id": "R3",
+        "query": "google serp api",
+        "market": "us_en"
+      },
+      "result": {
+        "ok": true,
+        "status": 200,
+        "engine": "google_web",
+        "data": {
+          "cache_status": false,
+          "code": 200,
+          "credits": 1,
+          "google_ai_overview": false,
+          "organic": [
+            {
+              "date": "22 Feb 2026",
+              "description": "Compare the best SerpApi alternatives in 2026. Find the right web search API for AI apps, SEO tools, research, and lead collection use cases.",
+              "display_link": "https://serpapi.com › blog › serpapi-alternatives-best-we...",
+              "link": "https://serpapi.com/blog/serpapi-alternatives-best-web-search-apis/",
+              "position": 1,
+              "title": "SerpApi Alternatives: Best Web Search APIs in 2026"
+            },
+            {
+              "date": "2 Dec 2025",
+              "description": "The 10 SERP API providers we tested in 2026 are cloro, SerpApi, Serpent API, DataForSEO, ScrapeBadger, SearchApi, Serper, SE Ranking, ...",
+              "display_link": "https://cloro.dev › Blog",
+              "link": "https://cloro.dev/blog/best-serp-apis/",
+              "position": 2,
+              "title": "Best SERP APIs 2026: 10 Tested on Cost, AI and Tracking"
+            },
+            {
+              "date": "22 Jan 2026",
+              "description": "10 Best SERP APIs for Scraping Google in 2026 · Scrapingdog's SERP API · Data For SEO · Apify · SearchAPI · Bright Data · Hasdata · Serper · SerpAPI.",
+              "display_link": "https://www.scrapingdog.com › Blog",
+              "link": "https://www.scrapingdog.com/blog/best-serp-apis/",
+              "position": 3,
+              "title": "10 Best SERP APIs in 2026 to Scale Data Extraction from ..."
+            },
+            {
+              "description": "SerpApi is a real-time API to access Google search results. We handle proxies, solve captchas, and parse all rich structured data for you.",
+              "display_link": "https://serpapi.com",
+              "link": "https://serpapi.com/",
+              "position": 4,
+              "title": "SerpApi: Google Search API"
+            },
+            {
+              "date": "12 Oct 2026",
+              "description": "Semscraper vs DataForSEO: which SERP API for Google? DataForSEO is a very broad SEO data provider, and its SERP API is just one building block.",
+              "display_link": "https://www.semscraper.com › Semscraper › Guides",
+              "link": "https://www.semscraper.com/en/guides/best-serp-api",
+              "position": 5,
+              "title": "Best SERP API: Prices and Features Compared"
+            },
+            {
+              "display_link": "https://www.reddit.com › r › ... › whats_the_best_serp_scrapin...",
+              "link": "https://www.reddit.com/r/aiagents/comments/1mf6jwt/whats_the_best_serp_scraping_api_that_can_scale/",
+              "position": 6,
+              "title": "What's the best SERP scraping API that can scale easily - bright data or ..."
+            },
+            {
+              "display_link": "https://www.quora.com › What-is-the-best-Google-SER...",
+              "link": "https://www.quora.com/What-is-the-best-Google-SERP-scraper-Either-programming-solution-or-online-service-e-g-for-competitive-analysis",
+              "position": 7,
+              "title": "What is the best Google SERP scraper? Either programming solution or ..."
+            },
+            {
+              "description": "DataForSEO SERP API can power up any workflow: rank tracking, keyword research, competitive analysis, SERP feature monitoring, and AI Mode search insights.",
+              "display_link": "https://dataforseo.com › APIs",
+              "link": "https://dataforseo.com/apis/serp-api",
+              "position": 8,
+              "title": "SERP API You Can Trust: DataForSEO Always Works."
+            },
+            {
+              "date": "7 months ago",
+              "description": "DataForSEO bills per SERP page, Bright Data and Oxylabs talk in results, SerpApi is per successful search, ScraperAPI wraps things in credits, ...",
+              "display_link": "50+ comments  ·  7 months ago",
+              "link": "https://www.reddit.com/r/WebScrapingInsider/comments/1sesvvq/picking_one_google_serp_api_in_2026_feels_less/",
+              "position": 9,
+              "title": "Picking ONE Google SERP API in 2026 feels less like ..."
+            },
+            {
+              "date": "13 Apr 2026",
+              "description": "Looking for the best Google SERP scraper in 2026? We tested 7 tools: Chat4Data, SerpAPI, Oxylabs, and more, and ranked them by accuracy, ...",
+              "display_link": "https://chat4data.ai › blog › google-serp-scrapers",
+              "link": "https://chat4data.ai/blog/google-serp-scrapers",
+              "position": 10,
+              "title": "7 Best Google SERP Scrapers in 2026 (Tested & Ranked)"
+            }
+          ],
+          "spider_parameter": {
+            "engine": "google_web",
+            "gl": "gb",
+            "hl": "en",
+            "num": 10,
+            "q": "best serp api for seo",
+            "type": "search"
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "R4",
+        "query": "best serp api for seo",
+        "market": "us_en"
+      },
+      "result": {
+        "ok": true,
+        "status": 200,
+        "engine": "google_web",
+        "data": {
+          "cache_status": false,
+          "code": 200,
+          "credits": 1,
+          "google_ai_overview": false,
+          "organic": [
+            {
+              "date": "22 Feb 2026",
+              "description": "Compare the best SerpApi alternatives in 2026. Find the right web search API for AI apps, SEO tools, research, and lead collection use cases.",
+              "display_link": "https://serpapi.com › blog › serpapi-alternatives-best-we...",
+              "link": "https://serpapi.com/blog/serpapi-alternatives-best-web-search-apis/",
+              "position": 1,
+              "title": "SerpApi Alternatives: Best Web Search APIs in 2026"
+            },
+            {
+              "date": "2 Dec 2025",
+              "description": "The 10 SERP API providers we tested in 2026 are cloro, SerpApi, Serpent API, DataForSEO, ScrapeBadger, SearchApi, Serper, SE Ranking, ...",
+              "display_link": "https://cloro.dev › Blog",
+              "link": "https://cloro.dev/blog/best-serp-apis/",
+              "position": 2,
+              "title": "Best SERP APIs 2026: 10 Tested on Cost, AI and Tracking"
+            },
+            {
+              "date": "22 Jan 2026",
+              "description": "10 Best SERP APIs for Scraping Google in 2026 · Scrapingdog's SERP API · Data For SEO · Apify · SearchAPI · Bright Data · Hasdata · Serper · SerpAPI.",
+              "display_link": "https://www.scrapingdog.com › Blog",
+              "link": "https://www.scrapingdog.com/blog/best-serp-apis/",
+              "position": 3,
+              "title": "10 Best SERP APIs in 2026 to Scale Data Extraction from ..."
+            },
+            {
+              "description": "SerpApi is a real-time API to access Google search results. We handle proxies, solve captchas, and parse all rich structured data for you.",
+              "display_link": "https://serpapi.com",
+              "link": "https://serpapi.com/",
+              "position": 4,
+              "title": "SerpApi: Google Search API"
+            },
+            {
+              "date": "12 Oct 2026",
+              "description": "Semscraper vs DataForSEO: which SERP API for Google? DataForSEO is a very broad SEO data provider, and its SERP API is just one building block.",
+              "display_link": "https://www.semscraper.com › Semscraper › Guides",
+              "link": "https://www.semscraper.com/en/guides/best-serp-api",
+              "position": 5,
+              "title": "Best SERP API: Prices and Features Compared"
+            },
+            {
+              "display_link": "https://www.reddit.com › r › ... › whats_the_best_serp_scrapin...",
+              "link": "https://www.reddit.com/r/aiagents/comments/1mf6jwt/whats_the_best_serp_scraping_api_that_can_scale/",
+              "position": 6,
+              "title": "What's the best SERP scraping API that can scale easily - bright data or ..."
+            },
+            {
+              "display_link": "https://www.quora.com › What-is-the-best-Google-SER...",
+              "link": "https://www.quora.com/What-is-the-best-Google-SERP-scraper-Either-programming-solution-or-online-service-e-g-for-competitive-analysis",
+              "position": 7,
+              "title": "What is the best Google SERP scraper? Either programming solution or ..."
+            },
+            {
+              "description": "DataForSEO SERP API can power up any workflow: rank tracking, keyword research, competitive analysis, SERP feature monitoring, and AI Mode search insights.",
+              "display_link": "https://dataforseo.com › APIs",
+              "link": "https://dataforseo.com/apis/serp-api",
+              "position": 8,
+              "title": "SERP API You Can Trust: DataForSEO Always Works."
+            },
+            {
+              "date": "7 months ago",
+              "description": "DataForSEO bills per SERP page, Bright Data and Oxylabs talk in results, SerpApi is per successful search, ScraperAPI wraps things in credits, ...",
+              "display_link": "50+ comments  ·  7 months ago",
+              "link": "https://www.reddit.com/r/WebScrapingInsider/comments/1sesvvq/picking_one_google_serp_api_in_2026_feels_less/",
+              "position": 9,
+              "title": "Picking ONE Google SERP API in 2026 feels less like ..."
+            },
+            {
+              "date": "13 Apr 2026",
+              "description": "Looking for the best Google SERP scraper in 2026? We tested 7 tools: Chat4Data, SerpAPI, Oxylabs, and more, and ranked them by accuracy, ...",
+              "display_link": "https://chat4data.ai › blog › google-serp-scrapers",
+              "link": "https://chat4data.ai/blog/google-serp-scrapers",
+              "position": 10,
+              "title": "7 Best Google SERP Scrapers in 2026 (Tested & Ranked)"
+            }
+          ],
+          "spider_parameter": {
+            "engine": "google_web",
+            "gl": "gb",
+            "hl": "en",
+            "num": 10,
+            "q": "best serp api for seo",
+            "type": "search"
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "R5-FINAL",
+        "query": "serp api pricing",
+        "market": "us_en"
+      },
+      "result": {
+        "ok": true,
+        "status": 200,
+        "engine": "google_web",
+        "data": {
+          "cache_status": false,
+          "code": 200,
+          "credits": 1,
+          "google_ai_overview": false,
+          "organic": [
+            {
+              "date": "22 Feb 2026",
+              "description": "Compare the best SerpApi alternatives in 2026. Find the right web search API for AI apps, SEO tools, research, and lead collection use cases.",
+              "display_link": "https://serpapi.com › blog › serpapi-alternatives-best-we...",
+              "link": "https://serpapi.com/blog/serpapi-alternatives-best-web-search-apis/",
+              "position": 1,
+              "title": "SerpApi Alternatives: Best Web Search APIs in 2026"
+            },
+            {
+              "date": "2 Dec 2025",
+              "description": "The 10 SERP API providers we tested in 2026 are cloro, SerpApi, Serpent API, DataForSEO, ScrapeBadger, SearchApi, Serper, SE Ranking, ...",
+              "display_link": "https://cloro.dev › Blog",
+              "link": "https://cloro.dev/blog/best-serp-apis/",
+              "position": 2,
+              "title": "Best SERP APIs 2026: 10 Tested on Cost, AI and Tracking"
+            },
+            {
+              "date": "22 Jan 2026",
+              "description": "10 Best SERP APIs for Scraping Google in 2026 · Scrapingdog's SERP API · Data For SEO · Apify · SearchAPI · Bright Data · Hasdata · Serper · SerpAPI.",
+              "display_link": "https://www.scrapingdog.com › Blog",
+              "link": "https://www.scrapingdog.com/blog/best-serp-apis/",
+              "position": 3,
+              "title": "10 Best SERP APIs in 2026 to Scale Data Extraction from ..."
+            },
+            {
+              "description": "SerpApi is a real-time API to access Google search results. We handle proxies, solve captchas, and parse all rich structured data for you.",
+              "display_link": "https://serpapi.com",
+              "link": "https://serpapi.com/",
+              "position": 4,
+              "title": "SerpApi: Google Search API"
+            },
+            {
+              "date": "12 Oct 2026",
+              "description": "Semscraper vs DataForSEO: which SERP API for Google? DataForSEO is a very broad SEO data provider, and its SERP API is just one building block.",
+              "display_link": "https://www.semscraper.com › Semscraper › Guides",
+              "link": "https://www.semscraper.com/en/guides/best-serp-api",
+              "position": 5,
+              "title": "Best SERP API: Prices and Features Compared"
+            },
+            {
+              "display_link": "https://www.reddit.com › r › ... › whats_the_best_serp_scrapin...",
+              "link": "https://www.reddit.com/r/aiagents/comments/1mf6jwt/whats_the_best_serp_scraping_api_that_can_scale/",
+              "position": 6,
+              "title": "What's the best SERP scraping API that can scale easily - bright data or ..."
+            },
+            {
+              "display_link": "https://www.quora.com › What-is-the-best-Google-SER...",
+              "link": "https://www.quora.com/What-is-the-best-Google-SERP-scraper-Either-programming-solution-or-online-service-e-g-for-competitive-analysis",
+              "position": 7,
+              "title": "What is the best Google SERP scraper? Either programming solution or ..."
+            },
+            {
+              "description": "DataForSEO SERP API can power up any workflow: rank tracking, keyword research, competitive analysis, SERP feature monitoring, and AI Mode search insights.",
+              "display_link": "https://dataforseo.com › APIs",
+              "link": "https://dataforseo.com/apis/serp-api",
+              "position": 8,
+              "title": "SERP API You Can Trust: DataForSEO Always Works."
+            },
+            {
+              "date": "7 months ago",
+              "description": "DataForSEO bills per SERP page, Bright Data and Oxylabs talk in results, SerpApi is per successful search, ScraperAPI wraps things in credits, ...",
+              "display_link": "50+ comments  ·  7 months ago",
+              "link": "https://www.reddit.com/r/WebScrapingInsider/comments/1sesvvq/picking_one_google_serp_api_in_2026_feels_less/",
+              "position": 9,
+              "title": "Picking ONE Google SERP API in 2026 feels less like ..."
+            },
+            {
+              "date": "13 Apr 2026",
+              "description": "Looking for the best Google SERP scraper in 2026? We tested 7 tools: Chat4Data, SerpAPI, Oxylabs, and more, and ranked them by accuracy, ...",
+              "display_link": "https://chat4data.ai › blog › google-serp-scrapers",
+              "link": "https://chat4data.ai/blog/google-serp-scrapers",
+              "position": 10,
+              "title": "7 Best Google SERP Scrapers in 2026 (Tested & Ranked)"
+            }
+          ],
+          "spider_parameter": {
+            "engine": "google_web",
+            "gl": "gb",
+            "hl": "en",
+            "num": 10,
+            "q": "best serp api for seo",
+            "type": "search"
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "R6",
+        "query": "site:thordata.com serp api",
+        "market": "us_en"
+      },
+      "result": {
+        "ok": true,
+        "status": 200,
+        "engine": "google_web",
+        "data": {
+          "cache_status": false,
+          "code": 200,
+          "credits": 1,
+          "google_ai_overview": false,
+          "organic": [
+            {
+              "position": 1,
+              "title": "SERP API - Real-Time Google Search Results | Thordata",
+              "link": "https://www.thordata.com/products/serp-api",
+              "description": "Query live Google ranking titles, snippets, People Also Ask, and related searches through one structured SERP API.",
+              "display_link": "www.thordata.com › products › serp-api"
+            },
+            {
+              "position": 2,
+              "title": "How to Choose a SERP API for SEO in 2026 | Thordata",
+              "link": "https://www.thordata.com/blog/serp-api-for-seo",
+              "description": "A practical checklist for evaluating coverage, latency, pricing, and structured output when you pick a search data provider.",
+              "display_link": "www.thordata.com › blog › serp-api-for-seo"
+            },
+            {
+              "position": 3,
+              "title": "Web Scraper API - Structured Data at Scale | Thordata",
+              "link": "https://www.thordata.com/products/web-scraper-api",
+              "description": "Turn public pages into JSON records with fixed, schema-backed scraper tools for LinkedIn, YouTube, Facebook, Twitter/X, and Amazon.",
+              "display_link": "www.thordata.com › products › web-scraper-api"
+            },
+            {
+              "position": 4,
+              "title": "Thordata Pricing - Pay As You Go",
+              "link": "https://www.thordata.com/pricing",
+              "description": "Compare SERP search and Web Scraper pricing with no monthly minimum and usage-based billing.",
+              "display_link": "www.thordata.com › pricing"
+            },
+            {
+              "position": 5,
+              "title": "Thordata for Dify - SERP API Integration",
+              "link": "https://www.thordata.com/products/serp-api/dify-integration",
+              "description": "Connect Dify agents and workflows to Thordata SERP and Web Scraper tools with one API key.",
+              "display_link": "www.thordata.com › products › serp-api › dify-integration"
+            }
+          ],
+          "spider_parameter": {
+            "engine": "google_web",
+            "gl": "us",
+            "hl": "en",
+            "num": 10,
+            "q": "site:thordata.com serp api",
+            "type": "search"
+          }
+        }
+      }
+    }
+  ]
+}
