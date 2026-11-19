@@ -9,6 +9,7 @@ This implementation follows the SERP-only design approved for this repository. T
 | File | Responsibility |
 | --- | --- |
 | `thordata-seo-content-brief.yml` | Standalone Dify import artifact. |
+| `build_ifpkg.py` | Builds the Creator Center `.ifpkg` app package from the DSL. |
 | `build_workflow.py` | Graph, node configuration, JSON contract, and deterministic generation. |
 | `code/runtime.py` | Input validation, response normalization, evidence limits, brief validation, rendering, and safe failures. Standard library only. |
 | `code/brief-schema.json` | Generated model-output contract for review and tooling. |

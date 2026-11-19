@@ -128,9 +128,10 @@ python -m venv .venv
 .venv\Scripts\python build_workflow.py
 .venv\Scripts\python build_workflow.py --check
 .venv\Scripts\python -m pytest tests -q
+.venv\Scripts\python build_ifpkg.py
 ```
 
-These checks use bundled SERP fixtures and do not make paid requests. The recorded Google response used by the runtime and execution tests is in `tests/fixtures/serp-observations.json`; the UK sample is in `tests/fixtures/google-web-gb.json`.
+`build_ifpkg.py` produces `submission/thordata-seo-content-brief.ifpkg`, the version 2 app package accepted by [Dify Creator Center](https://creators.dify.ai). These checks use bundled SERP fixtures and do not make paid requests. The recorded Google response used by the runtime and execution tests is in `tests/fixtures/serp-observations.json`; the UK sample is in `tests/fixtures/google-web-gb.json`.
 
 ## More from Thordata
 
